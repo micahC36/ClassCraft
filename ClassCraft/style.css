@@ -1,0 +1,162 @@
+body {
+    background-color: beige;
+}
+
+li {
+    color: black;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*.list-style {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: green;
+}*/
+
+.container {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+}
+
+.paragraph {
+    text-align: center;
+    object-fit: fill;
+    border: 5px solid #000;
+    padding-right: 0;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, sans-serif;
+    font-size: 50px;
+    display: block;
+    position: static;
+    overflow: visible;
+}
+
+.info-container {
+    width: 50%;
+}
+
+.calendly {
+    width: 50%;
+}
+
+.website-name {
+    height: 100px;
+}
+
+.subject-tutor-info {
+    display: flex;
+}
+
+.subject-buttons {
+    width: 25%;
+    float: none;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.heading {
+    color: #00f;
+    text-align: center;
+    font-size: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    width: 100%;
+    height: 100px;
+    direction: ltr;
+    color: #000;
+    text-align: center;
+    overflow-wrap: normal;
+    border: 1px solid #000;
+    border-radius: 10px;
+    flex-direction: row;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    display: flex;
+    text-decoration: none;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.button1 {
+    background-color: #8d6e63;
+}
+
+.button2 {
+    background-color: #00796b;
+}
+
+.button3 {
+    background-color: #d35400;
+}
+
+.button4 {
+    background-color: #795548;
+}
+
+.button5 {
+    background-color: #c2185b;
+}
+
+.button6 {
+    background-color: #558b2f;
+}
+
+.tutor-info {
+    width: 100%
+}
+
+.tutor-list, .favorite-tutors {
+    width: 100%;
+}
+
+.heading-2, .heading-3 {
+    text-align: center;
+    font-size: 48px;
+    color: blue;
+}
+
+.paragraph-2, .paragraph-3 {
+    text-align: center;
+    font-size: 24px;
+}
+

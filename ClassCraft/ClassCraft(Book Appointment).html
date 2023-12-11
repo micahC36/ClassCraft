@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Book Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book a Tutor Appointment</h1>
+        <form id="bookAppointmentForm">
+            <div class="form-group">
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentTime">Appointment Time:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required>
+            </div>
+            <div class="form-group">
+                <label for="tutor">Select Tutor:</label>
+                <select id="tutor" name="tutor" required>
+                    <option value="">Select a Tutor</option>
+                    <option value="1">Jill Applebottom</option>
+                    <option value="2">Jack Orangeseed</option>
+                    <option value="3">Mary Grapevine</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Book Appointment</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Button</title>
+    <style>
+        .link-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .link-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="file:///Users/tonyybutler/Desktop/coding%20projects/.vscode/ReviewPageClassCraft.html" class="link-button">Leave a review</a>
+</body>
+</html>
+        </form>
+    </div>
+    <script>
+        const bookAppointmentForm = document.getElementById('bookAppointmentForm');
+
+        bookAppointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const appointmentDate = e.target.appointmentDate.value;
+            const appointmentTime = e.target.appointmentTime.value;
+            const tutor = e.target.tutor.value;   
+
+submit a form with a fetch request in JavaScript
+
+### Response: 4. Submit a Form with a Fetch Request in JavaScript
+
+```javascript
+const signInForm = document.getElementById('signInForm');
+const createUserForm = document.getElementById('createUserForm');
+const bookAppointmentForm = document.getElementById('bookAppointmentForm');
+
+signInForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const username = e.target.username.value;
+    const password = e.target.password.value;
+
+    try {
+        const response = await fetch('/signin', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, password })
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to sign in');
+        }
+
+        // Successful sign in, redirect to another page or display a message
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
+
+createUserForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const newUsername = e.target.newUsername.value;
+    const newPassword = e.
