@@ -92,7 +92,7 @@
                 <label for="newPassword">Password:</label>
                 <input type="password" id="newPassword" name="newPassword" required>
             </div>
-            <button type="submit" class="button">Create User</button>
+            <button type="submit" class="button" onclick="redirectToIndex()">Create User</button>
         </form>
 <head>
     <meta charset="UTF-8">
@@ -136,6 +136,8 @@
 
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
+
+            window.location.href = "index.html";
         });
         createUserForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -145,4 +147,10 @@
             localStorage.setItem('username', newUsername);
             localStorage.setItem('password', newPassword);
 
+            window.location.href = "index.html";
+
         });
+
+        function redirectToIndex() {
+            window.location.href = "index.html";
+        }
